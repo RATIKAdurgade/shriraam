@@ -1,0 +1,14 @@
+aws ssm get-parameter --name /aws/service/eks/optimized-ami/1.18/amazon-linux-2/recommended/image_id --region us-east-1 --query "Parameter.Value" --output text
+terraform.12.28 init
+terraform.12.28 plan
+terraform.12.28 apply
+
+aws_instance.docker-xingnet-org: Creation complete after 48s [id=i-0b032b0f887ab721e]
+
+# https://medium.com/@aliatakan/terraform-create-a-vpc-subnets-and-more-6ef43f0bf4c1
+
+aws sts get-caller-identity
+aws configure list-profiles
+aws configure list
+
+ssh-keygen -f demo-key-pair-shriram

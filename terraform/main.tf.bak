@@ -1,0 +1,7 @@
+resource "aws_instance" "docker-xingnet-org" {
+  ami = "ami-0dd0589ee7a07c236"
+  instance_type = "t2.micro"
+  tags = {
+    "app" = "docker.xingnet.org"
+  }
+}
